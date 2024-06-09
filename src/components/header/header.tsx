@@ -6,7 +6,7 @@ import LanguageSelect from './language-select'
 
 export default function Header() {
   return (
-    <header className="flex h-20 items-center p-4">
+    <header className="fixed z-10 flex h-20 w-full items-center bg-background/50 p-4 backdrop-blur-sm">
       <Container>
         <section className="mx-auto hidden h-full w-fit items-center justify-center sm:flex">
           <ul className="flex gap-4 font-medium text-[hsl(var(--muted-foreground))] [&_a]:cursor-pointer">
