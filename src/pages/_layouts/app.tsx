@@ -8,7 +8,7 @@ export default function AppLayout() {
     <div>
       <Header />
 
-      <main className="pt-28">
+      <main className="py-28">
         <Container>
           <Outlet />
         </Container>
