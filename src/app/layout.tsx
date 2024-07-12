@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Header from '@/components/header';
+import Container from '@/components/container';
+import Footer from '@/components/footer/footer';
+import { ThemeProvider } from '@/components/theme/theme-provider';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+        <main className='py-28'>
+          <Container>
+        {children}
+
+          </Container>
+        </main>
+    <Footer />
+          </ThemeProvider>
+        </body>
     </html>
   );
 }

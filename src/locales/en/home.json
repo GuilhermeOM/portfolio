@@ -1,0 +1,43 @@
+{
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "profile": {
+    "role": "Mid-level software developer"
+  },
+  "about": {
+    "title": "About",
+    "description": "I am a software developer who loves automation and web development, always looking for new technologies. My work style is to always provide the best software quality on the projects I work on, implementing the best practices and helping my teammates and the company to grow."
+  },
+  "workexperience": {
+    "title": "Work experience",
+    "content": [
+      {
+        "moment": "2023 - present",
+        "title": "Mid-level software developer",
+        "caption": "Acting in important operation projects."
+      },
+      {
+        "moment": "2022 - 2023",
+        "title": "Junior software developer",
+        "caption": "Collaborated closely with the operational gate team to develop the new gate system integrated with the new TOS (terminal operational system). Improved most features of the ship docking system."
+      },
+      {
+        "moment": "2022 - 2023",
+        "title": "Intern software developer",
+        "caption": "Developed a monitoring system that tracks most of company's RPAs. Worked together with my tutor and the operation team to develop the ship docking system, Berthwindow."
+      }
+    ]
+  },
+  "sideprojects": {
+    "title": "Side projects",
+    "content": [
+      {
+        "moment": "2024 (Paused)",
+        "caption": "Manages your strength based on your lifts. You can organize your training routine and check your improvements."
+      }
+    ]
+  }
+}
