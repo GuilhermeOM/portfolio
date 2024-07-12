@@ -7,10 +7,15 @@ export default function LanguageSelect() {
 
   function handleLanguageChange(language: string) {
     i18n.changeLanguage(language)
+
+    localStorage.setItem('@guilherme-portifolio:language', language)
   }
 
+  const language = localStorage.getItem('@guilherme-portifolio:language')
+  const languageIsValid = language && ['en', 'br'].includes(language)
+
   return (
-    <Select defaultValue="en" onValueChange={handleLanguageChange}>
+    <Select defaultValue={languageIsValid ? language : 'en'} onValueChange={handleLanguageChange}>
       <SelectTrigger className="w-20 border-none shadow-none hover:bg-secondary">
         <SelectValue />
       </SelectTrigger>

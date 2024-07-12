@@ -8,8 +8,12 @@ export const supportedLngs = {
   br: 'Português-BR',
 }
 
+const language = localStorage.getItem('@guilherme-portifolio:language')
+const languageIsValid = language && Object.keys(supportedLngs).includes(language)
+
 i18n.use(initReactI18next).init({
   fallbackLng: 'en',
+  lng: languageIsValid ? language : 'en',
   supportedLngs: Object.keys(supportedLngs),
   debug: true,
   interpolation: {
