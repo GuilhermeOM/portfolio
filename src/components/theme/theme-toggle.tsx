@@ -1,15 +1,14 @@
-"use client"
+'use client'
 
 import { Moon, Sun } from 'lucide-react'
+import { useTheme } from 'next-themes'
 
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
-
-import { useTheme } from "next-themes"
 import { getDictionary } from '@/get-dictionary'
 
 interface ThemeToggleProps {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>["theme"];
+  dictionary: Awaited<ReturnType<typeof getDictionary>>['theme']
 }
 
 export function ThemeToggle({ dictionary }: ThemeToggleProps) {

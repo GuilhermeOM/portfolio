@@ -1,22 +1,27 @@
-import ContentDescription from './content-description'
-import strength from "@/assets/strength-logo.webp"
 import Image from 'next/image'
-import AnimateHomeContainer from './animate-home-container'
-import { Locale } from '@/i18n-config';
-import { getDictionary } from '@/get-dictionary';
 
-export default async function Home({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const dictionary = await getDictionary(lang);
-  
+import strength from '@/assets/strength-logo.webp'
+import { getDictionary } from '@/get-dictionary'
+import { Locale } from '@/i18n-config'
+
+import AnimateHomeContainer from './animate-home-container'
+import ContentDescription from './content-description'
+
+export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(lang)
+
   return (
     <AnimateHomeContainer>
       <section id="me" className="flex gap-4">
         <div>
-          <Image priority src="https://github.com/GuilhermeOM.png" alt="github profile picture" width={150} height={150} className="w-20 rounded-full" />
+          <Image
+            priority
+            src="https://github.com/GuilhermeOM.png"
+            alt="github profile picture"
+            width={150}
+            height={150}
+            className="w-20 rounded-full"
+          />
         </div>
         <div>
           <h3 className="text-xl font-semibold">Guilherme Malta</h3>

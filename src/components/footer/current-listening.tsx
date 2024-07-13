@@ -1,16 +1,16 @@
-"use client"
+'use client'
+
+import Image from 'next/image'
+import { useTheme } from 'next-themes'
 
 import spotifyMono from '@/assets/spotify-primary-logo-rgb-black.png'
 import spotifyColored from '@/assets/spotify-primary-logo-rgb-green.png'
-
-import { useTheme } from 'next-themes'
-import Image from 'next/image'
 
 export default function CurrentListening() {
   const { theme } = useTheme()
   let themeInUse = theme
 
-  if (theme === "system") {
+  if (theme === 'system') {
     themeInUse = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   }
 
@@ -18,7 +18,7 @@ export default function CurrentListening() {
     <div className="flex items-center gap-2">
       <div>
         <Image
-          src={themeInUse === "dark" ? spotifyColored : spotifyMono}
+          src={themeInUse === 'dark' ? spotifyColored : spotifyMono}
           alt="spotify logo"
           width={150}
           height={150}
