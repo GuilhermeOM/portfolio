@@ -1,0 +1,47 @@
+{
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  },
+  "page": {
+    "home": {
+      "profile": {
+          "role": "Desenvolvedor de software pleno"
+      },
+      "about": {
+        "title": "Sobre",
+        "description": "Sou um desenvolvedor de software que adora automação e desenvolvimento web, sempre em busca de novas tecnologias. Meu estilo de trabalho é sempre oferecer a melhor qualidade de software nos projetos em que atuo, implementando as melhores práticas e ajudando meus colegas e a empresa a crescer."
+      },
+      "workexperience": {
+        "title": "Experiências de trabalho",
+        "content": [
+          {
+            "moment": "2023 - presente",
+            "title": "Desenvolvedor de software pleno",
+            "caption": "Atuando em importantes projetos operacionais."
+          },
+          {
+            "moment": "2022 - 2023",
+            "title": "Desenvolvedor de software junior",
+            "caption": "Colaborei estreitamente com a equipe operacional de Gate para desenvolver o novo sistema de Gate integrado ao novo TOS (sistema operacional de terminal). Aprimorei a maioria dos recursos do sistema de atracação de navios."
+          },
+          {
+            "moment": "2022 - 2023",
+            "title": "Estagiário de desenvolvimento de software",
+            "caption": "Desenvolvi um sistema de monitoramento que rastreia a maioria dos RPAs da empresa. Trabalhei em conjunto com meu tutor e a equipe de operação para desenvolver o sistema de atracação de navios, Berthwindow."
+          }
+        ]
+      },
+      "sideprojects": {
+        "title": "Projetos paralelos",
+        "content": [
+          {
+            "moment": "2024 (Pausado)",
+            "caption": "Gerencia sua força com base em seus levantamentos de peso. Você pode organizar sua rotina de treinamento e verificar suas melhorias."
+          }
+        ]
+      }
+    }
+  }
+}

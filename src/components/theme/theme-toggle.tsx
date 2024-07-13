@@ -6,8 +6,13 @@ import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 
 import { useTheme } from "next-themes"
+import { getDictionary } from '@/get-dictionary'
 
-export function ThemeToggle() {
+interface ThemeToggleProps {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["theme"];
+}
+
+export function ThemeToggle({ dictionary }: ThemeToggleProps) {
   const { setTheme } = useTheme()
 
   return (
@@ -20,9 +25,9 @@ export function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme('light')}>{'theme.light'}</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('dark')}>{'theme.dark'}</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('system')}>{'theme.system'}</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('light')}>{dictionary.light}</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('dark')}>{dictionary.dark}</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('system')}>{dictionary.system}</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )

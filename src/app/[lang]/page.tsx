@@ -1,18 +1,26 @@
-import ContentDescription from '@/components/content-description'
+import ContentDescription from './content-description'
 import strength from "@/assets/strength-logo.webp"
 import Image from 'next/image'
-import AnimatePageContainer from './animate-page-container'
+import AnimateHomeContainer from './animate-home-container'
+import { Locale } from '@/i18n-config';
+import { getDictionary } from '@/get-dictionary';
 
-export default function Home() {
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+  
   return (
-    <AnimatePageContainer>
+    <AnimateHomeContainer>
       <section id="me" className="flex gap-4">
         <div>
           <Image priority src="https://github.com/GuilhermeOM.png" alt="github profile picture" width={150} height={150} className="w-20 rounded-full" />
         </div>
         <div>
           <h3 className="text-xl font-semibold">Guilherme Malta</h3>
-          <p className="text-sm dark:text-muted-foreground">{('profile.role')}</p>
+          <p className="text-sm dark:text-muted-foreground">{dictionary.page.home.profile.role}</p>
           <a
             href="https://github.com/GuilhermeOM"
             className="cursor-pointer text-sm font-light text-muted-foreground hover:underline"
@@ -23,54 +31,54 @@ export default function Home() {
       </section>
       <section id="about" className="max-w-3xl">
         <div>
-          <h4 className="text-lg font-semibold leading-10">{('about.title')}</h4>
-          <p className="text-sm dark:text-muted-foreground">{('about.description')}</p>
+          <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.about.title}</h4>
+          <p className="text-sm dark:text-muted-foreground">{dictionary.page.home.about.description}</p>
         </div>
       </section>
       <section id="work-experience">
-        <h4 className="text-lg font-semibold leading-10">{('workexperience.title')}</h4>
+        <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.workexperience.title}</h4>
         <ul className="flex flex-col gap-8">
           <li>
             <ContentDescription
-              sideDescription={'workexperience.content.0.moment'}
-              title={'workexperience.content.0.title - Santos Brasil'}
+              sideDescription={dictionary.page.home.workexperience.content[0].moment}
+              title={`${dictionary.page.home.workexperience.content[0].title} - Santos Brasil`}
               link="https://www.santosbrasil.com.br/v2021/"
-              description={'workexperience.content.0.caption'}
+              description={dictionary.page.home.workexperience.content[0].caption}
               stack={['React', 'Next', 'Redux', 'Tailwind', 'Shadcn', 'Framer Motion', 'Node', '.NET']}
             />
           </li>
           <li>
             <ContentDescription
-              sideDescription="2022 - 2023"
-              title={'workexperience.content.1.title - Santos Brasil'}
+              sideDescription={dictionary.page.home.workexperience.content[1].moment}
+              title={`${dictionary.page.home.workexperience.content[1].title} - Santos Brasil`}
               link="https://www.santosbrasil.com.br/v2021/"
-              description={('workexperience.content.1.caption')}
+              description={dictionary.page.home.workexperience.content[1].caption}
               stack={['React', 'Redux', 'MaterialUI', 'EmotionCSS', 'Node', 'SignalR', '.NET']}
             />
           </li>
           <li>
             <ContentDescription
-              sideDescription="2021 - 2022"
-              title={'workexperience.content.2.title - Santos Brasil'}
+              sideDescription={dictionary.page.home.workexperience.content[2].moment}
+              title={`${dictionary.page.home.workexperience.content[2].title} - Santos Brasil`}
               link="https://www.santosbrasil.com.br/v2021/"
-              description={('workexperience.content.2.caption')}
+              description={dictionary.page.home.workexperience.content[2].caption}
               stack={['React', 'Redux', 'MaterialUI', 'Node', '.NET']}
             />
           </li>
         </ul>
       </section>
       <section id="side-projects">
-        <h4 className="text-lg font-semibold leading-10">{('sideprojects.title')}</h4>
+        <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.sideprojects.title}</h4>
         <ul className="flex flex-col gap-8">
           <li>
             <ContentDescription
-              sideDescription={('sideprojects.content.0.moment')}
+              sideDescription={dictionary.page.home.sideprojects.content[0].moment}
               image={{
                 src: strength,
                 alt: 'strong man',
               }}
               title="Strength"
-              description={('sideprojects.content.0.caption')}
+              description={dictionary.page.home.sideprojects.content[0].caption}
               stack={['Next', 'Tailwind', 'Shadcn', 'Framer Motion', '.NET']}
             />
           </li>
@@ -94,6 +102,6 @@ export default function Home() {
           </li>
         </ul>
       </section>
-    </AnimatePageContainer>
+    </AnimateHomeContainer>
   )
 }
