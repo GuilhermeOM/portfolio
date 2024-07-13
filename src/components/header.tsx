@@ -1,5 +1,5 @@
-import { getDictionary } from '@/get-dictionary'
-import { Locale } from '@/i18n-config'
+import { getDictionary } from '@/lib/i18n/get-dictionary'
+import { Locale } from '@/lib/i18n/i18n-config'
 
 import Container from './container'
 import { ThemeToggle } from './theme/theme-toggle'

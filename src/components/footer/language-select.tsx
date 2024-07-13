@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from 'next/navigation'
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { i18n, Locale } from '@/i18n-config'
+import { i18n, Locale } from '@/lib/i18n/i18n-config'
 
 export default function LanguageSelect() {
   const pathName = usePathname()

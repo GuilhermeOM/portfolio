@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 import strength from '@/assets/strength-logo.webp'
-import { getDictionary } from '@/get-dictionary'
-import { Locale } from '@/i18n-config'
+import { getDictionary } from '@/lib/i18n/get-dictionary'
+import { Locale } from '@/lib/i18n/i18n-config'
 
 import AnimateHomeContainer from './animate-home-container'
 import ContentDescription from './content-description'

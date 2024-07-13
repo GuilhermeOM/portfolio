@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
-import { getDictionary } from '@/get-dictionary'
+import { getDictionary } from '@/lib/i18n/get-dictionary'
 
 interface ThemeToggleProps {
   dictionary: Awaited<ReturnType<typeof getDictionary>>['theme']

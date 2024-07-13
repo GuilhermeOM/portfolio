@@ -7,7 +7,7 @@ import Container from '@/components/container'
 import Footer from '@/components/footer/footer'
 import Header from '@/components/header'
 import { ThemeProvider } from '@/components/theme/theme-provider'
-import { i18n, type Locale } from '@/i18n-config'
+import { i18n, type Locale } from '@/lib/i18n/i18n-config'
 
 const inter = Inter({ subsets: ['latin'] })
 
