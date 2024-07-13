@@ -1,7 +1,8 @@
 import { ArrowUpRight } from 'lucide-react'
+import Image, { StaticImageData } from 'next/image'
 
 interface Image {
-  src: string
+  src: StaticImageData
   alt: string
 }
 
@@ -40,7 +41,7 @@ export default function ContentDescription({
         <p>{sideDescription}</p>
       </div>
       <div className="flex flex-col gap-1">
-        {image && <img src={image.src} alt={image.alt} width={150} height={150} className="w-14 rounded-md border" />}
+        {image && <Image src={image.src} alt={image.alt} width={150} height={150} className="w-14 rounded-md border" />}
         {link ? (
           <a
             href={link}

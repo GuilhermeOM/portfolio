@@ -1,29 +1,32 @@
-import { useTranslation } from 'react-i18next'
+'use client'
+
+import { usePathname, useRouter } from 'next/navigation'
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { i18n, Locale } from '@/lib/i18n/i18n-config'
 
 export default function LanguageSelect() {
-  const { i18n } = useTranslation()
+  const pathName = usePathname()
+  const router = useRouter()
 
-  function handleLanguageChange(language: string) {
-    i18n.changeLanguage(language)
-
-    localStorage.setItem('@guilherme-portifolio:language', language)
+  function redirectedPathName(locale: Locale) {
+    if (!pathName) return '/'
+    const segments = pathName.split('/')
+    segments[1] = locale
+    return segments.join('/')
   }
 
-  const language = localStorage.getItem('@guilherme-portifolio:language')
-  const languageIsValid = language && ['en', 'br'].includes(language)
-
   return (
-    <Select defaultValue={languageIsValid ? language : 'en'} onValueChange={handleLanguageChange}>
-      <SelectTrigger className="w-20 border-none shadow-none hover:bg-secondary">
+    <Select defaultValue={pathName.slice(1)} onValueChange={(value: Locale) => router.push(redirectedPathName(value))}>
+      <SelectTrigger className="w-24 border-none shadow-none hover:bg-secondary">
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="en" defaultChecked>
-          US
-        </SelectItem>
-        <SelectItem value="br">BR</SelectItem>
+        {i18n.locales.map((locale) => (
+          <SelectItem key={locale} value={locale} defaultChecked>
+            {locale.toUpperCase()}
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   )
