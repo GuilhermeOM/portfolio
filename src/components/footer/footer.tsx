@@ -1,6 +1,10 @@
 import Container from '../container'
-import CurrentListening from './current-listening'
 import LanguageSelect from './language-select'
+import dynamic from 'next/dynamic'
+
+const CurrentListening = dynamic(() => import('./current-listening'), {
+  ssr: false
+})
 
 export default function Footer() {
   return (

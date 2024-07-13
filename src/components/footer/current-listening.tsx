@@ -10,7 +10,7 @@ export default function CurrentListening() {
   const { theme } = useTheme()
   let themeInUse = theme
 
-  if (theme === 'system') {
+  if (theme === "system") {
     themeInUse = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   }
 
@@ -18,8 +18,8 @@ export default function CurrentListening() {
     <div className="flex items-center gap-2">
       <div>
         <Image
-          src={themeInUse === 'dark' ? spotifyColored : spotifyMono}
-          alt="spotify log"
+          src={themeInUse === "dark" ? spotifyColored : spotifyMono}
+          alt="spotify logo"
           width={150}
           height={150}
           className="w-10"
