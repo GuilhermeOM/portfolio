@@ -5,6 +5,9 @@
     "system": "Sistema"
   },
   "page": {
+    "notfound": {
+      "description": "Desculpa, página não encontrada"
+    },
     "home": {
       "profile": {
           "role": "Desenvolvedor de software pleno"

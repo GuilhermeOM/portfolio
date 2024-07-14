@@ -5,6 +5,9 @@
     "system": "System"
   },
   "page": {
+    "notfound": {
+      "description": "Sorry, page not found"
+    },
     "home": {
       "profile": {
         "role": "Mid-level software developer"
