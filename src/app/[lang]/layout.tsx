@@ -13,10 +13,10 @@ export default function HomeLayout({
   return (
     <div>
       <Header lang={params.lang} />
-      <main className="py-28">
+      <main className="pb-16 pt-28">
         <Container>{children}</Container>
       </main>
-      <Footer />
+      <Footer lang={params.lang} />
     </div>
   )
 }

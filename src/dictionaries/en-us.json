@@ -4,6 +4,16 @@
     "dark": "Dark",
     "system": "System"
   },
+  "spotify": {
+    "offline": {
+      "title": "Not playing"
+    },
+    "online": {
+      "title": "Listening now",
+      "artist": "by",
+      "album": "on"
+    }
+  },
   "page": {
     "notfound": {
       "description": "Sorry, page not found"

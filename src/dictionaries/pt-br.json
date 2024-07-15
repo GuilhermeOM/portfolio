@@ -4,6 +4,16 @@
     "dark": "Escuro",
     "system": "Sistema"
   },
+  "spotify": {
+    "offline": {
+      "title": "Não está tocando"
+    },
+    "online": {
+      "title": "Ouvindo agora",
+      "artist": "por",
+      "album": "do álbum"
+    }
+  },
   "page": {
     "notfound": {
       "description": "Desculpa, página não encontrada"

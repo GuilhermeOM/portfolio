@@ -1,20 +1,24 @@
-import dynamic from 'next/dynamic'
+import { getDictionary } from '@/lib/i18n/get-dictionary'
+import { Locale } from '@/lib/i18n/i18n-config'
 
 import Container from '../container'
 import LanguageSelect from './language-select'
+import PlayingTrack from './spotify/playing-track'
 
-const CurrentListening = dynamic(() => import('./current-listening'), {
-  ssr: false,
-})
+interface FooterProps {
+  lang: Locale
+}
 
-export default function Footer() {
+export default async function Footer({ lang }: FooterProps) {
+  const dictionary = await getDictionary(lang)
+
   return (
-    <footer className="flex h-20 items-center p-4">
+    <footer className="flex h-32 items-center">
       <Container>
         <section>
-          <CurrentListening />
+          <PlayingTrack dictionary={dictionary.spotify} />
         </section>
-        <section className="absolute right-0 flex h-full items-center">
+        <section className="absolute right-4 flex h-full items-center">
           <LanguageSelect />
         </section>
       </Container>

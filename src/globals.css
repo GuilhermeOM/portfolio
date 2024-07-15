@@ -67,3 +67,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .mask-img-low-l-high-r {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      hsl(var(--background)) 10px,
+      hsl(var(--background)) calc(100% - 60px),
+      transparent 100%
+    );
+  }
+}
