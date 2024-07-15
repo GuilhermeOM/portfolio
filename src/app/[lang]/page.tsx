@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 
 import strength from '@/assets/strength-logo.webp'
@@ -6,6 +7,10 @@ import { Locale } from '@/lib/i18n/i18n-config'
 
 import AnimateHomeContainer from './animate-home-container'
 import ContentDescription from './content-description'
+
+export const metadata: Metadata = {
+  title: 'Home',
+}
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang)

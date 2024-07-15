@@ -6,7 +6,7 @@ interface Image {
   alt: string
 }
 
-interface JobExperienceProps {
+interface ContentDescriptionProps {
   sideDescription: string
   title: string
   description?: string
@@ -22,7 +22,7 @@ export default function ContentDescription({
   image,
   link,
   stack,
-}: JobExperienceProps) {
+}: ContentDescriptionProps) {
   function handleStack() {
     let stackListToString = ''
 
