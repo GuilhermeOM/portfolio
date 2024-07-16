@@ -21,7 +21,7 @@ export default function LanguageSelect() {
       <SelectTrigger className="w-24 border-none shadow-none hover:bg-secondary">
         <SelectValue />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent data-testid="select-locales-content">
         {i18n.locales.map((locale) => (
           <SelectItem key={locale} value={locale} defaultChecked>
             {locale.toUpperCase()}
