@@ -12,7 +12,7 @@ export default async function Header({ lang }: HeaderProps) {
   const dictionary = await getDictionary(lang)
 
   return (
-    <header className="fixed z-10 flex h-20 w-full items-center">
+    <header className="fixed z-10 flex h-20 w-screen items-center">
       <Container>
         <section className="absolute right-4 flex h-full items-center">
           <ThemeToggle dictionary={dictionary.theme} />

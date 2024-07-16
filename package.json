@@ -10,9 +10,9 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "prettier --write",
-      "eslint --max-warnings 0 ."
+      "next lint --max-warnings 0 ."
     ]
   },
   "dependencies": {
