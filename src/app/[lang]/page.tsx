@@ -6,6 +6,7 @@ import { getDictionary } from '@/lib/i18n/get-dictionary'
 import { Locale } from '@/lib/i18n/i18n-config'
 
 import AnimateHomeContainer from './animate-home-container'
+import AnimateHomeContentList from './animate-home-content-list'
 import ContentDescription from './content-description'
 
 export const metadata: Metadata = {
@@ -47,14 +48,14 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
       </section>
       <section id="work-experience">
         <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.workexperience.title}</h4>
-        <ul className="flex flex-col gap-8">
+        <AnimateHomeContentList defaultLength={3} minLength={3}>
           <li>
             <ContentDescription
               sideDescription={dictionary.page.home.workexperience.content[0].moment}
-              title={`${dictionary.page.home.workexperience.content[0].title} - Santos Brasil`}
-              link="https://www.santosbrasil.com.br/v2021/"
+              title={`${dictionary.page.home.workexperience.content[0].title} - XP Inc.`}
+              link="https://www.xpinc.com/"
               description={dictionary.page.home.workexperience.content[0].caption}
-              stack={['React', 'Next', 'Redux', 'Tailwind', 'Shadcn', 'Framer Motion', 'Node', '.NET']}
+              stack={['Azure', '.NET', 'Redis', 'Kafka', 'RabbitMQ', 'Docker', 'Kubernetes']}
             />
           </li>
           <li>
@@ -63,7 +64,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
               title={`${dictionary.page.home.workexperience.content[1].title} - Santos Brasil`}
               link="https://www.santosbrasil.com.br/v2021/"
               description={dictionary.page.home.workexperience.content[1].caption}
-              stack={['React', 'Redux', 'MaterialUI', 'EmotionCSS', 'Node', 'SignalR', '.NET']}
+              stack={['React', 'Next', 'Redux', 'Tailwind', 'Node', 'Azure', '.NET', 'Kafka']}
             />
           </li>
           <li>
@@ -72,10 +73,19 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
               title={`${dictionary.page.home.workexperience.content[2].title} - Santos Brasil`}
               link="https://www.santosbrasil.com.br/v2021/"
               description={dictionary.page.home.workexperience.content[2].caption}
+              stack={['React', 'Redux', 'MaterialUI', 'EmotionCSS', 'Node', 'SignalR', '.NET']}
+            />
+          </li>
+          <li>
+            <ContentDescription
+              sideDescription={dictionary.page.home.workexperience.content[3].moment}
+              title={`${dictionary.page.home.workexperience.content[3].title} - Santos Brasil`}
+              link="https://www.santosbrasil.com.br/v2021/"
+              description={dictionary.page.home.workexperience.content[3].caption}
               stack={['React', 'Redux', 'MaterialUI', 'Node', '.NET']}
             />
           </li>
-        </ul>
+        </AnimateHomeContentList>
       </section>
       <section id="side-projects">
         <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.sideprojects.title}</h4>

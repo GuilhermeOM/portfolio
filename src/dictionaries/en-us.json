@@ -30,9 +30,14 @@
         "title": "Work experience",
         "content": [
           {
-            "moment": "2023 - present",
+            "moment": "2024 - present",
+            "title": "Software engineer II",
+            "caption": "Acting in key flows and processes for opening brokerage and bank accounts."
+          },
+          {
+            "moment": "2023 - 2024",
             "title": "Mid-level software developer",
-            "caption": "Acting in important operation projects."
+            "caption": "Supported the development of the terminal's central weighbridge system. Contributed to improvements in the monitoring interface of the gate system and assisted with the implementation of this system in other units."
           },
           {
             "moment": "2022 - 2023",

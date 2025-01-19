@@ -30,9 +30,14 @@
         "title": "Experiências de trabalho",
         "content": [
           {
-            "moment": "2023 - presente",
+            "moment": "2024 - presente",
+            "title": "Engenheiro de software II",
+            "caption": "Atuando em importantes fluxos e processos de abertura de conta corretora a bancaria."
+          },
+          {
+            "moment": "2023 - 2024",
             "title": "Desenvolvedor de software pleno",
-            "caption": "Atuando em importantes projetos operacionais."
+            "caption": "Dei suporte ao desenvolvimento do sistema de balança central do terminal. Contribui com melhorias para interface de monitoramento do sistema de Gate e ajudei com a implementação desse sitema nas outras unidades."
           },
           {
             "moment": "2022 - 2023",
