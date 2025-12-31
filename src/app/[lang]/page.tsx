@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: 'Home',
 }
 
-export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+export default async function Home({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params
   const dictionary = await getDictionary(lang)
 
   return (

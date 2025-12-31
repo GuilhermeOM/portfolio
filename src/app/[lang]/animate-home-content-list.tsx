@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowDown, ArrowUp } from 'lucide-react'
-import { useState } from 'react'
+import { type JSX, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
 

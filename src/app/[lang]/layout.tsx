@@ -3,13 +3,16 @@ import Footer from '@/components/footer/footer'
 import Header from '@/components/header'
 import { Locale } from '@/lib/i18n/i18n-config'
 
-export default function HomeLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode
-  params: { lang: Locale }
-}>) {
+export default async function HomeLayout(
+  props: Readonly<{
+    children: React.ReactNode
+    params: Promise<{ lang: Locale }>
+  }>
+) {
+  const params = await props.params
+
+  const { children } = props
+
   return (
     <div>
       <Header lang={params.lang} />

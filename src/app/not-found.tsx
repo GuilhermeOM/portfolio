@@ -6,7 +6,7 @@ import { getDictionary } from '@/lib/i18n/get-dictionary'
 import { Locale } from '@/lib/i18n/i18n-config'
 
 export default async function NotFound() {
-  const headersList = headers()
+  const headersList = await headers()
   const acceptLanguage = headersList.get('Accept-Language') || ''
   const lang = acceptLanguage.split(',')[0] as Locale
 
@@ -18,7 +18,7 @@ export default async function NotFound() {
       <p>{dictionary.page.notfound.description} :(</p>
 
       <div className="my-8 flex w-full max-w-48">
-        <Link href="/" passHref legacyBehavior>
+        <Link href="/" passHref>
           <Button className="w-full">Home</Button>
         </Link>
       </div>
