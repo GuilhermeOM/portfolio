@@ -39,7 +39,7 @@
           {
             "moment": "2024 - 2025",
             "title": "Engenheiro de software II - XP Inc.",
-            "caption": "Integrei o novo sistema de abertura de conta com diversos serviços externos, como análise de crédito e antifraude. Contribuí para o desenvolvimento de uma experiência dedicada à abertura de contas B2B.",
+            "caption": "Integrei o sistema de abertura de conta com diversos serviços externos, como análise de crédito e antifraude. Contribuí para o desenvolvimento de uma experiência dedicada à abertura de contas B2B.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
