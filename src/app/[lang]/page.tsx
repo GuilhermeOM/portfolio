@@ -50,42 +50,17 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
       <section id="work-experience">
         <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.workexperience.title}</h4>
         <AnimateHomeContentList defaultLength={3} minLength={3}>
-          <li>
-            <ContentDescription
-              sideDescription={dictionary.page.home.workexperience.content[0].moment}
-              title={`${dictionary.page.home.workexperience.content[0].title} - XP Inc.`}
-              link="https://www.xpinc.com/"
-              description={dictionary.page.home.workexperience.content[0].caption}
-              stack={['Azure', '.NET', 'Redis', 'Kafka', 'RabbitMQ', 'Docker', 'Kubernetes']}
-            />
-          </li>
-          <li>
-            <ContentDescription
-              sideDescription={dictionary.page.home.workexperience.content[1].moment}
-              title={`${dictionary.page.home.workexperience.content[1].title} - Santos Brasil`}
-              link="https://www.santosbrasil.com.br/v2021/"
-              description={dictionary.page.home.workexperience.content[1].caption}
-              stack={['React', 'Next', 'Redux', 'Tailwind', 'Node', 'Azure', '.NET', 'Kafka']}
-            />
-          </li>
-          <li>
-            <ContentDescription
-              sideDescription={dictionary.page.home.workexperience.content[2].moment}
-              title={`${dictionary.page.home.workexperience.content[2].title} - Santos Brasil`}
-              link="https://www.santosbrasil.com.br/v2021/"
-              description={dictionary.page.home.workexperience.content[2].caption}
-              stack={['React', 'Redux', 'MaterialUI', 'EmotionCSS', 'Node', 'SignalR', '.NET']}
-            />
-          </li>
-          <li>
-            <ContentDescription
-              sideDescription={dictionary.page.home.workexperience.content[3].moment}
-              title={`${dictionary.page.home.workexperience.content[3].title} - Santos Brasil`}
-              link="https://www.santosbrasil.com.br/v2021/"
-              description={dictionary.page.home.workexperience.content[3].caption}
-              stack={['React', 'Redux', 'MaterialUI', 'Node', '.NET']}
-            />
-          </li>
+          {dictionary.page.home.workexperience.content.map((item, index) => (
+            <li key={index}>
+              <ContentDescription
+                sideDescription={item.moment}
+                title={item.title}
+                link={item.link}
+                description={item.caption}
+                stack={item.stack}
+              />
+            </li>
+          ))}
         </AnimateHomeContentList>
       </section>
       <section id="side-projects">

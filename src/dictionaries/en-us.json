@@ -24,30 +24,45 @@
       },
       "about": {
         "title": "About",
-        "description": "I am a software developer who loves automation and web development, always looking for new technologies. My work style is to always provide the best software quality on the projects I work on, implementing the best practices and helping my teammates and the company to grow."
+        "description": "I am a software developer passionate about automation and architecture, always eager to explore new technologies. I strive to deliver the highest software quality by applying best practices, while supporting my teammates and contributing to the company’s growth."
       },
       "workexperience": {
         "title": "Work experience",
         "content": [
           {
-            "moment": "2024 - present",
-            "title": "Software engineer II",
-            "caption": "Acting in key flows and processes for opening brokerage and bank accounts."
+            "moment": "2025 - present",
+            "title": "Software engineer III - XP Inc.",
+            "caption": "Created a document qrcode system to optimize the account opening process, reducing the time taken by users to upload their documents. Developed a BACEN validation system to ensure compliance with regulatory requirements during account opening.",
+            "link": "https://www.xpinc.com/",
+            "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
+          },
+          {
+            "moment": "2024 - 2025",
+            "title": "Software engineer II - XP Inc.",
+            "caption": "Integrated the account opening system with various external services, such as credit analysis and anti-fraud. Contributed to the development of a dedicated experience for B2B account opening.",
+            "link": "https://www.xpinc.com/",
+            "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
             "moment": "2023 - 2024",
-            "title": "Mid-level software developer",
-            "caption": "Supported the development of the terminal's central weighbridge system. Contributed to improvements in the monitoring interface of the gate system and assisted with the implementation of this system in other units."
+            "title": "Mid-level software developer - Santos Brasil",
+            "caption": "Supported the development of the terminal's central weighbridge system. Contributed to improvements in the monitoring interface of the gate system and assisted with the implementation of this system in other units.",
+            "link": "https://www.santosbrasil.com.br/v2021/",
+            "stack": ["React", "Next", "Redux", "Tailwind", "Node", "Azure", ".NET", "Kafka"]
           },
           {
             "moment": "2022 - 2023",
-            "title": "Junior software developer",
-            "caption": "Collaborated closely with the operational gate team to develop the new gate system integrated with the new TOS (terminal operational system). Improved most features of the ship docking system."
+            "title": "Junior software developer - Santos Brasil",
+            "caption": "Collaborated closely with the operational gate team to develop the new gate system integrated with the new TOS (terminal operational system). Improved most features of the ship docking system.",
+            "link": "https://www.santosbrasil.com.br/v2021/",
+            "stack": ["React", "Redux", "MaterialUI", "EmotionCSS", "Node", "SignalR", ".NET"]
           },
           {
             "moment": "2021 - 2022",
-            "title": "Intern software developer",
-            "caption": "Developed a monitoring system that tracks most of company's RPAs. Worked together with my tutor and the operation team to develop the ship docking system, Berthwindow."
+            "title": "Intern software developer - Santos Brasil",
+            "caption": "Developed a monitoring system that tracks most of company's RPAs. Worked together with my tutor and the operation team to develop the ship docking system, Berthwindow.",
+            "link": "https://www.santosbrasil.com.br/v2021/",
+            "stack": ["React", "Redux", "MaterialUI", "Node", ".NET"]
           }
         ]
       },

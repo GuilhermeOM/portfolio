@@ -24,30 +24,45 @@
       },
       "about": {
         "title": "Sobre",
-        "description": "Sou um desenvolvedor de software que adora automação e desenvolvimento web, sempre em busca de novas tecnologias. Meu estilo de trabalho é sempre oferecer a melhor qualidade de software nos projetos em que atuo, implementando as melhores práticas e ajudando meus colegas e a empresa a crescer."
+        "description": "Sou um desenvolvedor de software apaixonado por automação e arquitetura, sempre ansioso por explorar novas tecnologias. Eu me esforço para entregar software da mais alta qualidade aplicando as melhores práticas, apoiando meus colegas de equipe e contribuindo para o crescimento da empresa."
       },
       "workexperience": {
         "title": "Experiências de trabalho",
         "content": [
           {
-            "moment": "2024 - presente",
-            "title": "Engenheiro de software II",
-            "caption": "Atuando em importantes fluxos e processos de abertura de conta corretora a bancaria."
+            "moment": "2025 - presente",
+            "title": "Engenheiro de software III - XP Inc.",
+            "caption": "Criei um sistema de qrcode de documentos para otimizar o processo de abertura de conta, reduzindo o tempo que os usuários levam para enviar seus documentos. Desenvolvi um sistema de validação no BACEN para garantir o atendimento às exigências regulatórias durante a abertura de conta.",
+            "link": "https://www.xpinc.com/",
+            "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
+          },
+          {
+            "moment": "2024 - 2025",
+            "title": "Engenheiro de software II - XP Inc.",
+            "caption": "Integrei o sistema de abertura de conta com diversos serviços externos, como análise de crédito e antifraude. Contribuí para o desenvolvimento de uma experiência dedicada à abertura de contas B2B.",
+            "link": "https://www.xpinc.com/",
+            "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
             "moment": "2023 - 2024",
-            "title": "Desenvolvedor de software pleno",
-            "caption": "Dei suporte ao desenvolvimento do sistema de balança central do terminal. Contribui com melhorias para interface de monitoramento do sistema de Gate e ajudei com a implementação desse sitema nas outras unidades."
+            "title": "Desenvolvedor de software pleno - Santos Brasil",
+            "caption": "Dei suporte ao desenvolvimento do sistema de balança central do terminal. Contribui com melhorias para interface de monitoramento do sistema de Gate e ajudei com a implementação desse sitema nas outras unidades.",
+            "link": "https://www.santosbrasil.com.br/v2021/",
+            "stack": ["React", "Next", "Redux", "Tailwind", "Node", "Azure", ".NET", "Kafka"]
           },
           {
             "moment": "2022 - 2023",
-            "title": "Desenvolvedor de software junior",
-            "caption": "Colaborei estreitamente com a equipe operacional de Gate para desenvolver o novo sistema de Gate integrado ao novo TOS (sistema operacional de terminal). Aprimorei a maioria dos recursos do sistema de atracação de navios."
+            "title": "Desenvolvedor de software junior - Santos Brasil",
+            "caption": "Colaborei estreitamente com a equipe operacional de Gate para desenvolver o novo sistema de Gate integrado ao novo TOS (sistema operacional de terminal). Aprimorei a maioria dos recursos do sistema de atracação de navios.",
+            "link": "https://www.santosbrasil.com.br/v2021/",
+            "stack": ["React", "Redux", "MaterialUI", "EmotionCSS", "Node", "SignalR", ".NET"]
           },
           {
             "moment": "2021 - 2022",
-            "title": "Estagiário de desenvolvimento de software",
-            "caption": "Desenvolvi um sistema de monitoramento que rastreia a maioria dos RPAs da empresa. Trabalhei em conjunto com meu tutor e a equipe de operação para desenvolver o sistema de atracação de navios, Berthwindow."
+            "title": "Estagiário de desenvolvimento de software - Santos Brasil",
+            "caption": "Desenvolvi um sistema de monitoramento que rastreia a maioria dos RPAs da empresa. Trabalhei em conjunto com meu tutor e a equipe de operação para desenvolver o sistema de atracação de navios, Berthwindow.",
+            "link": "https://www.santosbrasil.com.br/v2021/",
+            "stack": ["React", "Redux", "MaterialUI", "Node", ".NET"]
           }
         ]
       },
