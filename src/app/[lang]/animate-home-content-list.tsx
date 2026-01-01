@@ -1,8 +1,8 @@
 'use client'
 
-import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowDown, ArrowUp } from 'lucide-react'
-import { useState } from 'react'
+import { AnimatePresence, motion } from 'motion/react'
+import { type JSX, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
 
@@ -40,7 +40,7 @@ export default function AnimateHomeContentList({
         key={i}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, x: 200, scale: 1.2 }}
+        exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.2 } }}
         transition={{
           duration: 0.8,
           opacity: {
@@ -56,11 +56,11 @@ export default function AnimateHomeContentList({
 
   return (
     <>
-      <AnimatePresence initial={false}>
-        <ul className="flex flex-col gap-8">
+      <ul className="flex flex-col gap-8">
+        <AnimatePresence initial={false}>
           {handleListItemAnimation(children.filter((_, i) => i + 1 <= listLength))}
-        </ul>
-      </AnimatePresence>
+        </AnimatePresence>
+      </ul>
 
       <div className="mt-4 flex w-full justify-center gap-4">
         {canIncrease && (
