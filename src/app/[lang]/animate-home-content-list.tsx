@@ -2,6 +2,7 @@
 
 import { ArrowDown, ArrowUp } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
+import posthog from 'posthog-js'
 import { type JSX, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
@@ -9,13 +10,15 @@ import { Button } from '@/components/ui/button'
 interface AnimateHomeContentListProps {
   children: JSX.Element[]
   defaultLength: number
-  minLength: number
+  minLength?: number
+  source?: string
 }
 
 export default function AnimateHomeContentList({
   children,
   defaultLength,
   minLength = 1,
+  source = 'UNKNOWN',
 }: AnimateHomeContentListProps) {
   const [listLength, setListLength] = useState(defaultLength)
 
@@ -23,12 +26,16 @@ export default function AnimateHomeContentList({
   const canDecrease = listLength > minLength
 
   function increaseList() {
+    posthog.capture(`${source}_button-increase_list_clicked`)
+
     if (canIncrease) {
       setListLength((state) => state + 1)
     }
   }
 
   function decreaseList() {
+    posthog.capture(`${source}_button-decrease_list_clicked`)
+
     if (canDecrease) {
       setListLength((state) => state - 1)
     }

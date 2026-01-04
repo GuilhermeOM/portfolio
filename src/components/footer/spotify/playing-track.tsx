@@ -67,9 +67,13 @@ const fetcher = (url: string) =>
   })
 
 export default function PlayingTrack({ dictionary }: PlayingTrackProps) {
-  const { data, error } = useSWR<GetCurrentPlayingTrack | undefined>('api/spotify/get-current-playing-track', fetcher, {
-    refreshInterval: 1000 * 10,
-  }) // 10 seconds
+  const { data, error } = useSWR<GetCurrentPlayingTrack | undefined>(
+    '/api/spotify/get-current-playing-track',
+    fetcher,
+    {
+      refreshInterval: 1000 * 10,
+    }
+  ) // 10 seconds
 
   function listAsString(list: unknown[]): string {
     let stringfiedList = ''

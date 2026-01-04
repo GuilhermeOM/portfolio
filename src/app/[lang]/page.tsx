@@ -49,7 +49,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
       </section>
       <section id="work-experience">
         <h4 className="text-lg font-semibold leading-10">{dictionary.page.home.workexperience.title}</h4>
-        <AnimateHomeContentList defaultLength={3} minLength={3}>
+        <AnimateHomeContentList defaultLength={3} minLength={3} source="workexperience">
           {dictionary.page.home.workexperience.content.map((item, index) => (
             <li key={index}>
               <ContentDescription
@@ -87,7 +87,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
             <ContentDescription sideDescription="Github" title="@GuilhermeOM" link="https://github.com/GuilhermeOM" />
           </li>
           <li>
-            <ContentDescription sideDescription="Twitter" title="@Maltaun99" link="https://x.com/Maltaun99" />
+            <ContentDescription sideDescription="X" title="@Maltaun99" link="https://x.com/Maltaun99" />
           </li>
           <li>
             <ContentDescription
