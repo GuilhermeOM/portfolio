@@ -18,7 +18,7 @@ export default async function NotFound() {
       <p>{dictionary.page.notfound.description} :(</p>
 
       <div className="my-8 flex w-full max-w-48">
-        <Link href="/" passHref>
+        <Link href="/" passHref className="w-full">
           <Button className="w-full">Home</Button>
         </Link>
       </div>
