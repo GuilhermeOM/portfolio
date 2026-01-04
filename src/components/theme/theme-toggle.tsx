@@ -2,6 +2,7 @@
 
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
+import posthog from 'posthog-js'
 
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
@@ -14,6 +15,12 @@ interface ThemeToggleProps {
 export function ThemeToggle({ dictionary }: ThemeToggleProps) {
   const { setTheme } = useTheme()
 
+  function handleThemeChange(theme: 'light' | 'dark' | 'system') {
+    posthog.capture(`theme_button-${theme}_clicked`)
+
+    setTheme(theme)
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -24,9 +31,9 @@ export function ThemeToggle({ dictionary }: ThemeToggleProps) {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme('light')}>{dictionary.light}</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('dark')}>{dictionary.dark}</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('system')}>{dictionary.system}</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => handleThemeChange('light')}>{dictionary.light}</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => handleThemeChange('dark')}>{dictionary.dark}</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => handleThemeChange('system')}>{dictionary.system}</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )

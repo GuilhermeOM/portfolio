@@ -16,8 +16,10 @@ export default function LanguageSelect() {
     return segments.join('/')
   }
 
+  const sanitizedPathname = pathName.substring(1, pathName.length - 1)
+
   return (
-    <Select defaultValue={pathName.slice(1)} onValueChange={(value: Locale) => router.push(redirectedPathName(value))}>
+    <Select defaultValue={sanitizedPathname} onValueChange={(value: Locale) => router.push(redirectedPathName(value))}>
       <SelectTrigger className="w-24 border-none shadow-none hover:bg-secondary">
         <SelectValue />
       </SelectTrigger>
