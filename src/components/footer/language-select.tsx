@@ -1,6 +1,7 @@
 'use client'
 
 import { usePathname, useRouter } from 'next/navigation'
+import path from 'path'
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { i18n, Locale } from '@/lib/i18n/i18n-config'
@@ -16,7 +17,7 @@ export default function LanguageSelect() {
     return segments.join('/')
   }
 
-  const sanitizedPathname = pathName.substring(1, pathName.length - 1)
+  const sanitizedPathname = pathName.replaceAll('/', '')
 
   return (
     <Select defaultValue={sanitizedPathname} onValueChange={(value: Locale) => router.push(redirectedPathName(value))}>
