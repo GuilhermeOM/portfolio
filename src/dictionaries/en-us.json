@@ -30,28 +30,28 @@
         "title": "Work experience",
         "content": [
           {
-            "moment": "Sep 2025 - present",
+            "moment": "2025 - present",
             "title": "Software Engineer III - XP Inc.",
             "caption": "I lead backend development for the Advisor Rotation Engine, a system that identifies and assigns the most suitable advisor to each new client. I own the engine’s backend architecture and development, with a focus on scalability, performance, reliability, and maintainability. I also developed QR code document submission and BACEN regulatory validation solutions for account opening.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
-            "moment": "Aug 2024 - Sep 2025",
+            "moment": "2024 - 2025",
             "title": "Software Engineer II - XP Inc.",
             "caption": "Developed integrations between the account opening flow and credit analysis, anti-fraud, and other external services. Also contributed to building a dedicated B2B account opening experience.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
-            "moment": "Aug 2023 - Aug 2024",
+            "moment": "2023 - 2024",
             "title": "Mid-Level Software Engineer - Santos Brasil",
             "caption": "Worked on the evolution of the terminal’s central weighbridge system and gate monitoring interface. Also contributed to rolling out the solution across other company units.",
             "link": "https://www.santosbrasil.com.br/v2021/",
             "stack": ["React", "Next", "Redux", "Tailwind", "Node", "Azure", ".NET", "Kafka"]
           },
           {
-            "moment": "Sep 2022 - Aug 2023",
+            "moment": "2022 - 2023",
             "title": "Junior Software Engineer - Santos Brasil",
             "caption": "Developed an RPA monitoring system and contributed to Berthwindow, a solution used in the vessel berthing process.",
             "link": "https://www.santosbrasil.com.br/v2021/",

@@ -30,28 +30,28 @@
         "title": "Experiências de trabalho",
         "content": [
           {
-            "moment": "Set 2025 - presente",
+            "moment": "2025 - presente",
             "title": "Engenheiro de Software III - XP Inc.",
             "caption": "Lidero o desenvolvimento backend do Advisor Rotation Engine, sistema que identifica e atribui o assessor mais adequado a cada novo cliente. Sou responsável pela arquitetura e evolução do motor, com foco em escalabilidade, desempenho, confiabilidade e manutenibilidade. Também desenvolvi soluções de envio de documentos por QR Code e validação regulatória junto ao BACEN para a abertura de contas.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
-            "moment": "Ago 2024 - Set 2025",
+            "moment": "2024 - 2025",
             "title": "Engenheiro de Software II - XP Inc.",
             "caption": "Desenvolvi integrações do fluxo de abertura de contas com serviços de análise de crédito, antifraude e outras fontes externas. Também contribuí para criar uma experiência dedicada à abertura de contas B2B.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
-            "moment": "Ago 2023 - Ago 2024",
+            "moment": "2023 - 2024",
             "title": "Engenheiro de Software Pleno - Santos Brasil",
             "caption": "Atuei na evolução do sistema central de balanças do terminal e da interface de monitoramento dos gates. Também contribuí para implantar a solução em outras unidades da companhia.",
             "link": "https://www.santosbrasil.com.br/v2021/",
             "stack": ["React", "Next", "Redux", "Tailwind", "Node", "Azure", ".NET", "Kafka"]
           },
           {
-            "moment": "Set 2022 - Ago 2023",
+            "moment": "2022 - 2023",
             "title": "Engenheiro de Software Júnior - Santos Brasil",
             "caption": "Desenvolvi um sistema de monitoramento de RPAs e participei do desenvolvimento do Berthwindow, solução utilizada no processo de atracação de navios.",
             "link": "https://www.santosbrasil.com.br/v2021/",
