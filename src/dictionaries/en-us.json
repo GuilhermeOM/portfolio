@@ -20,47 +20,47 @@
     },
     "home": {
       "profile": {
-        "role": "Software engineer III"
+        "role": "Software Engineer III"
       },
       "about": {
         "title": "About",
-        "description": "I am a software developer passionate about automation and architecture, always eager to explore new technologies. I strive to deliver the highest software quality by applying best practices, while supporting my teammates and contributing to the company’s growth."
+        "description": "Software Engineer with experience in distributed systems, microservices, and domain-driven architectures. I work with .NET, messaging systems, SQL and NoSQL databases, and Azure, leading backend development for critical systems focused on scalability, reliability, and performance."
       },
       "workexperience": {
         "title": "Work experience",
         "content": [
           {
-            "moment": "2025 - present",
-            "title": "Software engineer III - XP Inc.",
-            "caption": "Created a document qrcode system to optimize the account opening process, reducing the time taken by users to upload their documents. Developed a BACEN validation system to ensure compliance with regulatory requirements during account opening.",
+            "moment": "Sep 2025 - present",
+            "title": "Software Engineer III - XP Inc.",
+            "caption": "I lead backend development for the Advisor Rotation Engine, a system that identifies and assigns the most suitable advisor to each new client. I own the engine’s backend architecture and development, with a focus on scalability, performance, reliability, and maintainability. I also developed QR code document submission and BACEN regulatory validation solutions for account opening.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
-            "moment": "2024 - 2025",
-            "title": "Software engineer II - XP Inc.",
-            "caption": "Integrated the account opening system with various external services, such as credit analysis and anti-fraud. Contributed to the development of a dedicated experience for B2B account opening.",
+            "moment": "Aug 2024 - Sep 2025",
+            "title": "Software Engineer II - XP Inc.",
+            "caption": "Developed integrations between the account opening flow and credit analysis, anti-fraud, and other external services. Also contributed to building a dedicated B2B account opening experience.",
             "link": "https://www.xpinc.com/",
             "stack": ["Azure", ".NET", "Redis", "Kafka", "RabbitMQ", "Docker", "Kubernetes"]
           },
           {
-            "moment": "2023 - 2024",
-            "title": "Mid-level software developer - Santos Brasil",
-            "caption": "Supported the development of the terminal's central weighbridge system. Contributed to improvements in the monitoring interface of the gate system and assisted with the implementation of this system in other units.",
+            "moment": "Aug 2023 - Aug 2024",
+            "title": "Mid-Level Software Engineer - Santos Brasil",
+            "caption": "Worked on the evolution of the terminal’s central weighbridge system and gate monitoring interface. Also contributed to rolling out the solution across other company units.",
             "link": "https://www.santosbrasil.com.br/v2021/",
             "stack": ["React", "Next", "Redux", "Tailwind", "Node", "Azure", ".NET", "Kafka"]
           },
           {
-            "moment": "2022 - 2023",
-            "title": "Junior software developer - Santos Brasil",
-            "caption": "Collaborated closely with the operational gate team to develop the new gate system integrated with the new TOS (terminal operational system). Improved most features of the ship docking system.",
+            "moment": "Sep 2022 - Aug 2023",
+            "title": "Junior Software Engineer - Santos Brasil",
+            "caption": "Developed an RPA monitoring system and contributed to Berthwindow, a solution used in the vessel berthing process.",
             "link": "https://www.santosbrasil.com.br/v2021/",
             "stack": ["React", "Redux", "MaterialUI", "EmotionCSS", "Node", "SignalR", ".NET"]
           },
           {
             "moment": "2021 - 2022",
             "title": "Intern software developer - Santos Brasil",
-            "caption": "Developed a monitoring system that tracks most of company's RPAs. Worked together with my tutor and the operation team to develop the ship docking system, Berthwindow.",
+            "caption": "Worked together with my tutor and the operation team to develop the ship docking system, Berthwindow.",
             "link": "https://www.santosbrasil.com.br/v2021/",
             "stack": ["React", "Redux", "MaterialUI", "Node", ".NET"]
           }
